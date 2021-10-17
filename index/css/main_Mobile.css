@@ -9,7 +9,7 @@
 
 a {
 	text-decoration: none;
-}
+	}
 .bgvideo{
 	position: fixed;  
     margin: auto 0px;
@@ -18,51 +18,49 @@ a {
     height: auto;  
     width: auto; 
 	z-index: -11;
-}
+	}
 .bgvideo canvas{
 	width: 100%;
 	height: 100%;
-}
-	.navMobile {
-			position: absolute;
-			margin: 0 auto;
-			width: 88vw;
-			height: 11vw;
-			max-height: 90px;
-			min-height: 60px;
-			min-width: 300px;
-			margin-top: 5vw;
-			padding-left: 7vw;
-			padding-right: 5vw;
-			overflow: hidden; 
-		}
+	}
+.navMobile {
+	position: absolute;
+	margin: 0 auto;
+	width: 88vw;
+	height: 11vw;
+	max-height: 90px;
+	min-height: 60px;
+	min-width: 300px;
+	margin-top: 5vw;
+	padding-left: 7vw;
+	padding-right: 5vw;
+	overflow: hidden; 
+	}
 		
-	.navMobile .navelement {
-			margin-top: 15px;
-			text-align: center;
-			color: #ffffff;
-			font-size: 1.8em;
-			line-height: 1.8em;
-			float: right;
-			border: #FFFFFF 2px solid;
-			border-radius: 0.4em;
-			padding-left: 12px;
-			padding-right: 12px;
-			opacity: 0.5;
-		}
-		.navMobile .navelement a {
-			color: #ffffff;
-		}
-		.navMobile .logobox{ 
-			height: 100%;
-			float: left;
-		}
-		.navMobile .logobox img {
-			height: 100%;
-		}
-
-@media screen and (min-width:1000px) {
-			
+.navMobile .navelement {
+	margin-top: 15px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 1.8em;
+	line-height: 1.8em;
+	float: right;
+	border: #FFFFFF 2px solid;
+	border-radius: 0.4em;
+	padding-left: 12px;
+	padding-right: 12px;
+	opacity: 0.5;
+	}
+.navMobile .navelement a {
+	color: #ffffff;
+	}
+.navMobile .logobox{ 
+	height: 100%;
+	float: left;
+	}
+.navMobile .logobox img {
+	height: 100%;
+	}
+	
 	.mainboxMobile{
 			width: 76vw;
 			min-width: 230px;
@@ -72,6 +70,9 @@ a {
 			padding-top: 25vh;
 			color: #FFFFFF;
 		}
+
+@media screen and (min-width:1000px) {
+	
 	.mainboxMobile h1{
 			font-size: 5em;
 		}
@@ -88,7 +89,7 @@ a {
 			margin-top: 18vh;
 			padding-left: 12vw;
 			padding-right: 12vw;
-			font-size: 2em;
+			font-size: 3em;
 			text-align: center;
 			line-height: 3.4em;
 		}
@@ -100,7 +101,7 @@ a {
 			border-radius: 0.4em;
 		}
 	.MobileDownload2{
-			margin-bottom: 4vw;
+			margin-bottom: 8vw;
 			color: #FFC960;
 			border: #FFC960 1px solid;
 			border-radius: 0.4em;
@@ -109,16 +110,7 @@ a {
 		}
 		
 @media screen and (max-width:999px) {
-		
-	.mainboxMobile{
-			width: 76vw;
-			min-width: 230px;
-			margin: auto;
-			padding-left: 12vw;
-			padding-right: 12vw;
-			padding-top: 25vh;
-			color: #FFFFFF;
-		}
+
 	.mainboxMobile h1{
 			font-size: 6.4em;
 		}
@@ -135,7 +127,7 @@ a {
 			min-width: 230px;
 			padding-left: 12vw;
 			padding-right: 12vw;
-			font-size: 2.8em;
+			font-size: 3em;
 			font-weight: 500;
 			text-align: center;
 			line-height: 3.4em;
@@ -143,7 +135,7 @@ a {
 			
 	.MobileDownload1{
 			color: #000000;
-			margin-bottom: 5vw;;
+			margin-bottom: 4vw;;
 			border: none;
 			background: #ffc960;
 			border-radius: 0.4em;
