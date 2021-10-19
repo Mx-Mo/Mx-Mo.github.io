@@ -7,11 +7,13 @@
 	font-family: Helvetica, Arial, "sans-serif", "微软雅黑"; 
 }
 body {
+	background: #000000;
+	}
+.overall{
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
-	background: #000000;
-	}
+}
 a {
 	text-decoration: none;
 	}
