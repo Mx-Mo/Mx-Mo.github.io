@@ -13,6 +13,7 @@ a {
 	text-decoration: none;
 	}
 .bgvideo{
+	position: absolute;
     margin: auto 0px;
     min-width: 100%;  
     min-height: 100%;  
