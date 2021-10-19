@@ -17,15 +17,14 @@ a {
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
+	z-index: -1;
 }
 .bgvideo{
-
     margin: auto 0px;
     min-width: 100%;  
     min-height: 100%;  
     height: auto;  
     width: auto; 
-	z-index: -11;
 	}
 .bgvideo canvas{
 	width: 100%;
@@ -71,9 +70,7 @@ a {
 	
 .mainboxMobile{
 	width: 76vw;
-	height: 75vh;
 	min-width: 230px;
-	overflow: hidden;
 	margin: auto;
 	padding-left: 12vw;
 	padding-right: 12vw;
@@ -81,7 +78,7 @@ a {
 	color: #FFFFFF;
 	}
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:991px) {
 	
 	.mainboxMobile h1{
 			font-size: 5em;
@@ -95,16 +92,15 @@ a {
 	.MobileDownbox{	
 			width: 76vw;
 			min-width: 230px;
-			margin-top: 18vh;
 			padding-left: 12vw;
 			padding-right: 12vw;
+			margin-top: 8vh;
 			font-size: 3em;
 			text-align: center;
 			line-height: 3.12em;
 		}
 		}
-		
-@media screen and (max-width:999px) {
+@media screen and (max-width:990px) {
 
 	.mainboxMobile h1{
 			font-size: 6.4em;
@@ -128,21 +124,17 @@ a {
 		}
 		}
 .MobileDownload1{
-	color: #000000;
 	margin-bottom: 4vw;;
 	border: none;
 	background: #ffc960;
 	border-radius: 0.4em;
-			
 	}
 .MobileDownload2{
 	margin-bottom: 8vw;
-	color: #ffc960;
 	border: #ffc960 2px solid;
 	border-radius: 0.4em;
 	background: rgba(0,0,0,0.2);
 	}
-
 .MobileDownload1 a{
 	color: #000000;
 }
