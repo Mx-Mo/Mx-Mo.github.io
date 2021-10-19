@@ -12,11 +12,17 @@ body {
 a {
 	text-decoration: none;
 	}
-.bgvideo{
+.bgbox{
 	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.bgvideo{
+
     margin: auto 0px;
-    min-width: 100vw;  
-    min-height: 100vh;  
+    min-width: 100%;  
+    min-height: 100%;  
     height: auto;  
     width: auto; 
 	z-index: -11;
