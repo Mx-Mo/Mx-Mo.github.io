@@ -1,5 +1,52 @@
 @charset "UTF-8";
 /* CSS Document */
+*{  
+    margin: 0px;  
+    padding: 0px;
+	font-family: Helvetica, Arial, "sans-serif", "微软雅黑"; 
+}
+a {
+	text-decoration: none;
+	}
+.navMobile {
+	position: absolute;
+	margin: 0 auto;
+	width: 88vw;
+	height: 11vw;
+	max-height: 90px;
+	min-height: 60px;
+	min-width: 300px;
+	margin-top: 5vw;
+	padding-left: 7vw;
+	padding-right: 5vw;
+	overflow: hidden; 
+	}
+		
+.navMobile .navelement {
+	margin-top: 15px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 1.8em;
+	line-height: 1.8em;
+	float: right;
+	border: #FFFFFF 2px solid;
+	border-radius: 0.4em;
+	padding-left: 12px;
+	padding-right: 12px;
+	opacity: 0.5;
+	}
+.navMobile .navelement a {
+	color: #ffffff;
+	}
+.navMobile .logobox{ 
+	height: 100%;
+	float: left;
+	}
+.navMobile .logobox img {
+	height: 100%;
+	}
+
+
 
 .pageHeadBG {
 	position: absolute;
