@@ -6,7 +6,9 @@
     padding: 0px;
 	font-family: Helvetica, Arial, "sans-serif", "微软雅黑"; 
 }
-
+body {
+	background: #000000;
+	}
 a {
 	text-decoration: none;
 	}
@@ -155,3 +157,7 @@ a {
 .MobileDownload2 a{
 	color: #ffc960;
 }
+
+
+
+
