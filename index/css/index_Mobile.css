@@ -4,7 +4,7 @@
 *{  
     margin: 0px;  
     padding: 0px;
-	font-family: "平方-简", Helvetica,"微软雅黑"; 
+	font-family: "苹方-简", Helvetica,"微软雅黑"; 
 }
 body {
 	background: #000000;
@@ -16,8 +16,7 @@ a {
 .bgbox{
 	position: absolute;
 	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
+	min-height: 100vh;
 	z-index: -1;
 	background: url("../bgVideo/CORGI2.0bg_1080.gif") no-repeat center;
 	background-size: cover;
@@ -73,29 +72,7 @@ a {
 	color: #FFFFFF;
 	}
 
-@media screen and (min-width:991px) {
-	
-	.mainboxMobile h1{
-			font-size: 5em;
-		}
-	.mainboxMobile p{
-			font-size: 1.6em;
-			line-height: 3em;
-			opacity: 0.6;
-		}
-		
-	.MobileDownbox{	
-			width: 76vw;
-			min-width: 230px;
-			padding-left: 12vw;
-			padding-right: 12vw;
-			margin-top: 8vh;
-			font-size: 3em;
-			text-align: center;
-			line-height: 3.12em;
-		}
-		}
-@media screen and (max-width:990px) {
+@media screen and (max-width:800px) {
 
 	.mainboxMobile h1{
 			font-size: 6.4em;
@@ -118,6 +95,51 @@ a {
 			line-height: 3.12em;
 		}
 		}
+@media screen and (min-width:801px) and (max-width:990px) {
+
+	.mainboxMobile h1{
+			font-size: 6.4em;
+		}
+	.mainboxMobile p{
+			font-size: 2.2em;
+			line-height: 2em;
+			opacity: 0.6;
+		}
+		
+	.MobileDownbox{	
+			width: 76vw;
+			min-width: 230px;
+			padding-left: 12vw;
+			padding-right: 12vw;
+			margin-top: 12vh;
+			font-size: 3em;
+			text-align: center;
+			line-height: 3.12em;
+		}
+		}
+@media screen and (min-width:991px) {
+	
+	.mainboxMobile h1{
+			font-size: 5em;
+		}
+	.mainboxMobile p{
+			font-size: 1.6em;
+			line-height: 3em;
+			opacity: 0.6;
+		}
+		
+	.MobileDownbox{	
+			width: 76vw;
+			min-width: 230px;
+			padding-left: 12vw;
+			padding-right: 12vw;
+			margin-top: 12vh;
+			font-size: 3em;
+			text-align: center;
+			line-height: 3.12em;
+		}
+		}
+
 .MobileDownload1{
 	margin-bottom: 4vw;;
 	border: none;
