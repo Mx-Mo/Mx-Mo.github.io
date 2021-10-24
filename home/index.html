@@ -21,6 +21,12 @@
 	function hideQRD(){
 		 document.getElementById('qrDownload').style.display="none";
 	}
+	function showTCQR(){
+		 document.getElementById('tiancaimenu').style.display="block";
+	}
+	function hideTCQR(){
+		 document.getElementById('tiancaimenu').style.display="none";
+	}
 	</script>
 	
 <link rel="stylesheet" type="text/css" href="css/index_PC.css">
@@ -40,7 +46,10 @@
 	 	<a href=" ">首页</a>
 		</div>
 		<div class="navelement">
-		<a href="#"><span class="icon-tcicon">&nbsp;</span>成为天菜创始人</a>
+		<a href="#" onmouseover="showTCQR()" onmouseout="hideTCQR()"><span class="icon-tcicon">&nbsp;</span>成为天菜创始人</a>
+		<div id="tiancaimenu">
+		<img src="images/WebQR.JPG" width="100%" alt="QR"/> <p>扫描二维码报名</p>
+		</div>
 		</div>
 		<div class="navelement">
 	 	<a href="#" onmouseover="showCU()" onmouseout="hideCU()">联系我们</a>
@@ -98,7 +107,7 @@
 	    		<span class="icon-qrcode">&nbsp;</span>
 				</a>
 				<div id="qrDownload">
-				
+			    <img src="images/WebQR.JPG" width="100%" alt="QR"/>
 				</div>
 			</div>
 		</div>
