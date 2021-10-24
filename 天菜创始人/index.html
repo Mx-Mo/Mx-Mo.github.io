@@ -7,18 +7,21 @@
 <link rel="stylesheet" type="text/css" href="css/css.css">
 <link rel="stylesheet" type="text/css" href="../home/css/main_Mobile.css">
 <link rel="stylesheet" type="text/css" href="../home/css/fonts.css">
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 
 <body>
-<div class="navMobile">
+
+<nav class="navMobile">
 		<div class="logobox">
 			<a href="../home/"><img src="../home/images/CORGI_Logo.png" alt="CORGI_Logo"/></a>
 		</div>
-</div>
-<div class="bottomdark">
-	123456
+		<div class="navelement">
+	 	<a href="../home/"><p>首页</p></a>
+		</div>	
+	</nav>
 	
-</div>
+<div class="bottomdark"></div>
 <div class="JoinBtn">
 	<a href=""><span class="icon-tcicon">&nbsp;</span>加入天菜创始人</a>
 </div>
@@ -61,6 +64,23 @@
 
 	<div style="height: 25vh;"></div>
 
-	
+<script type="text/javascript">	
+$().ready(function(){
+	$(window).scroll(function(){
+		var scrollTop = $(window).scrollTop();//获取当前滑动的位置
+			console.log('当前滑动的位置'+scrollTop);
+				if(scrollTop > 0){
+					$("nav").addClass("on");
+                }else{
+					$("nav").removeClass("on");
+                }
+            })
+        })
+</script>
+<script>
+  var imgs=$("img");
+  imgs.on("contextmenu",function(){return false;});
+  imgs.on("dragstart",function(){return false;});
+</script>  
 </body>
 </html>
