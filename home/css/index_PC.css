@@ -195,9 +195,8 @@ a {
 	background: #FFFFFF;
 	border-radius: 12px;
 	margin-left: -12px;
+	overflow: hidden;
 	}
-
-
 
 @media screen and (min-width:750px){
 		footer {

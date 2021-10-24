@@ -10,16 +10,13 @@ a {
 	text-decoration: none;
 	}
 .navMobile {
-	position: absolute;
-	margin: 0 auto;
+	position: fixed;
 	width: 88vw;
 	height: 11vw;
 	max-height: 90px;
 	min-height: 60px;
 	min-width: 300px;
-	margin-top: 5vw;
-	padding-left: 7vw;
-	padding-right: 5vw;
+	padding: 5vw 5vw 5vw 7vw;
 	overflow: hidden; 
 	z-index: 99;
 	}
@@ -45,4 +42,7 @@ a {
 	}
 .navMobile .navelement a {
 	color: #ffffff;
+	}
+.on {
+	background: #181818 !important;
 	}
