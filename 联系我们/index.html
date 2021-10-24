@@ -6,6 +6,7 @@
 <link rel="shortcut icon" href="../home/images/favicon.ico" >
 <link rel="stylesheet" type="text/css" href="css/css.css">
 <link rel="stylesheet" type="text/css" href="../home/css/main_Mobile.css">
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -16,14 +17,14 @@
 	<p>联系我们</p>
 	</div>
 
-	<div class="navMobile">
+	<nav class="navMobile">
 		<div class="logobox">
 			<a href="../home/"><img src="../home/images/CORGI_Logo.png" alt="CORGI_Logo"/></a>
 		</div>
 		<div class="navelement">
 	 	<a href="../home/"><p>首页</p></a>
 		</div>	
-	</div>
+	</nav>
 	
 	<div class="contactus">
 			<div class="channelbox">
@@ -61,5 +62,23 @@
 		</div>
 	</div>
 	</footer>
+<script type="text/javascript">	
+$().ready(function(){
+	$(window).scroll(function(){
+		var scrollTop = $(window).scrollTop();//获取当前滑动的位置
+			console.log('当前滑动的位置'+scrollTop);
+				if(scrollTop > 10){
+					$("nav").addClass("on");
+                }else{
+					$("nav").removeClass("on");
+                }
+            })
+        })
+</script>
+<script>
+  var imgs=$("img");
+  imgs.on("contextmenu",function(){return false;});
+  imgs.on("dragstart",function(){return false;});
+</script>  
 </body>
 </html>
