@@ -67,6 +67,7 @@ a {
 			min-width: 450px;
 			max-width: 600px; 
 			height: 180px;
+			margin-top: 20px;
 			padding: 20px;
 			background: #FFFFFF;
 			border: #D8D8D8 1px solid;
@@ -100,7 +101,21 @@ a {
 			font-size: 0.8em;
 			line-height: 2.5em;
 		}
-		
+#tiancaimenu {
+			display: none;
+			position: absolute;
+			width: 110px;
+			height: 145px;
+			margin-top: 20px;
+			padding: 20px;
+			margin-left: 2vw;
+			background: #FFFFFF;
+			border: #D8D8D8 1px solid;
+			border-radius: 12px;
+			color: #808080;
+			font-size: 0.8em;
+			line-height: 2.5em;
+}		
 .mainbox{
 	width: 750px;
 	margin: auto;
