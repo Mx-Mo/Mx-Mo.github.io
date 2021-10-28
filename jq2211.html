@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>汉堡菜单-jq22.com</title>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<style>
+*{  
+    margin: 0px;  
+    padding: 0px;
+	font-family: "苹方-简", Helvetica,"微软雅黑"; 
+	}
+a {
+	text-decoration: none;
+	}
+
+body {
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	background-color: #D4D4D4;
+}
+nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90vw;
+	height: 36px;
+	min-width: 320px;
+	padding: 1.5vh 4vw 1.5vh 6vw;
+	background: rgba(34,34,34,0.85);
+	z-index: 999;
+	}
+.navbg {
+	background: rgba(17,17,17,1.00) !important;
+	}
+nav .logo { 
+	height: 100%;
+	float: left;
+	}	
+.menu {
+	width: 100vw;
+	background: rgba(17,17,17,1.00);
+	display: none;
+	}
+	
+	
+	
+	
+.ham8 {
+	cursor: pointer;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	float: right;
+}
+.hamline {
+	fill:none;
+	stroke:#ffffff;
+	stroke-width:5;
+	stroke-linecap:round;
+	transition: transform 250ms;
+}
+.ham8 .top {
+	transform-origin: 50%;
+	transform: translateY(-25%);
+}
+.ham8 .middle {
+	transform-origin: 50%;
+}
+.ham8 .bottom {
+	transform-origin: 50%;
+	transform: translateY(25%);
+}
+.ham8.active .top {
+	transform: rotate(-45deg);
+}
+.ham8.active .middle {
+	transform: scaleX(0%);
+}
+.ham8.active .bottom {
+	transform: rotate(45deg);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<svg class="ham8" viewBox="0 0 100 100" width="36px" onclick="this.classList.toggle('active')">
+  <path class="hamline top"
+        d="m 20,50 h 60" />
+  <path class="hamline middle"
+        d="m 20,50 h 60" />
+  <path class="hamline bottom"
+        d="m 20,50 h 60" />
+</svg>
+</nav>
+<div class="menu">
+	<p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+</div>		
+	
+	
+	
+	
+<script>
+$(document).ready(function(){
+  $(".ham8").click(function(){
+    $(".menu").slideToggle(250);
+	$("nav").toggleClass("navbg");
+  });
+});
+</script>
+</body>
+</html>
