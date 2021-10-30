@@ -8,8 +8,8 @@
 	}
 a {
 	text-decoration: none;
+	color:inherit;
 	}
-
 body {
 	scroll-behavior: smooth;
 }
@@ -19,14 +19,11 @@ nav {
 	left: 0;
 	width: 95%;
 	height: 50px;
-	min-width: 1024px;
+	min-width: 320px;
 	padding: 0 2% 0 3%;
-	background: rgba(34,34,34,0.85);
+	background: rgba(34,34,34,0.9);
 	z-index: 999;
 	}
-
-@media only screen and (max-width: 1023px){ nav{min-width: 320px}}
-
 .navbg {
 	background: rgba(17,17,17,1.00) !important;
 	}
@@ -45,8 +42,8 @@ nav .logo {
 	float: right;
 	align-items: center;
 	justify-content: center;
-	vertical-align: middle;
 	margin: 15px;
+	display: none;
 }
 #ham8 .hamline {
 	fill:none;
@@ -81,17 +78,52 @@ nav .logo {
 /* ham ↑ */
 
 
-.menu {
-	position: absolute;
-	width: 100%;
-	margin-top: 50px;
-	background: rgba(17,17,17,1.00);
-	display: none;
-	}
-.menu ul li{
+#navlogo{
+	float: left;
+	width: 30%;
+	background: #FFAD4C;
+}
+#navmenu{
+	display: block;
+	float: right;
+	width: 70%;
+}
+
+#navmenu ul li{
+	display: inline;
 	list-style: none;
+	padding-left: 2%;
+	padding-right: 2%;
 	font-size: 0.75em;
-	color: #FFFFFF;
+	line-height: 50px;
+	color: #cccccc;
 }	
-	
+#navmenu ul li:hover {
+	color: #ffffff;
+}
+
+@media only screen and (max-width: 833px){
+#ham8 {
+	display: flex;
+	}
+#navmenu {
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 80%;
+	padding: 0 10% 0 10%;
+	text-align: center;
+	background: rgba(17,17,17,1.00);
+	}
+#navmenu ul li{
+	display: block;
+	list-style: none;
+	padding-left: 2%;
+	padding-right: 2%;
+	font-size: 0.75em;
+	line-height: 50px;
+	color: #cccccc;
+}	
+}
 	

@@ -15,25 +15,26 @@
 <body>
 
 <nav>
-
+	<div id="navlogo">
+		1
+	</div>
+	<div id="navmenu">
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">新闻</a></li>
+			<li><a href="#">特性</a></li>
+			<li><a href="#">购买</a></li>
+			<li><a href="#">下载</a></li>
+			<li><a href="#">联系我们</a></li>
+		</ul>
+	</div>
 <svg id="ham8" viewBox="0 0 100 100" height="20" onclick="this.classList.toggle('active')">
   <path class="hamline top"    d="m 20,50 h 60" />
   <path class="hamline middle" d="m 20,50 h 60" />
   <path class="hamline bottom" d="m 20,50 h 60" />
 </svg>
 </nav>
-<div class="menu">
-	<ul>
-		<li>首页</li>
-		<li>首页</li>
-		<li>首页</li>
-		<li>首页</li>
-		<li>首页</li>
-		<li>首页</li>
-		<li>首页</li>
-		<li>首页</li>
-	</ul>
-</div>		
+	
 	
 	
 	
@@ -42,7 +43,7 @@
 <script>
 $(document).ready(function(){
   $("#ham8").click(function(){
-    $(".menu").slideToggle(300);
+    $("#navmenu").slideToggle(300);
 	$("nav").toggleClass("navbg");
   });
 });
