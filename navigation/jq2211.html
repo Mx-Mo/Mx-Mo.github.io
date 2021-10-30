@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>汉堡菜单-jq22.com</title>
+<link rel="stylesheet" type="text/css" href="jq2211.css">
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<svg id="ham8" viewBox="0 0 100 100" height="30" onclick="this.classList.toggle('active')">
+  <path class="hamline top"    d="m 20,50 h 60" />
+  <path class="hamline middle" d="m 20,50 h 60" />
+  <path class="hamline bottom" d="m 20,50 h 60" />
+</svg>
+</nav>
+<div class="menu">
+	<ul>
+		<li>首页</li>
+		<li>首页</li>
+		<li>首页</li>
+		<li>首页</li>
+		<li>首页</li>
+		<li>首页</li>
+		<li>首页</li>
+		<li>首页</li>
+	</ul>
+</div>		
+	
+	
+	
+<div style="height: 200vh; background: rgba(133,133,133,1.00);">
+</div>
+<script>
+$(document).ready(function(){
+  $("#ham8").click(function(){
+    $(".menu").slideToggle(300);
+	$("nav").toggleClass("navbg");
+  });
+});
+</script>
+</body>
+</html>
