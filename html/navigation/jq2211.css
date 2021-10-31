@@ -14,7 +14,7 @@ body {
 	scroll-behavior: smooth;
 }
 nav {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 90%;
@@ -25,7 +25,7 @@ nav {
 	z-index: 999;
 	}
 .navbg {
-	background: rgba(17,17,17,1.00) !important;
+	background: rgba(17,17,17,0.9) !important;
 	}
 
 /* ham ↓ */
@@ -75,10 +75,12 @@ nav {
 
 
 #navlogo{
+	cursor: pointer;
+	user-select: none;
 	float: left;
 	width: 12%;
 	margin-left: 23%;
-	padding: 10px;
+	padding: 10px 0 10px 0;
 }
 #navmenu{
 	display:inline;
@@ -112,18 +114,17 @@ nav {
 	top: 50px;
 	left: 0;
 	width: 80%;
-	padding: 0 10% 0 10%;
+	padding: 5% 10% 5% 10%;
 	text-align: center;
-	background: rgba(17,17,17,1.00);
+	background: rgba(17,17,17,0.9);
 	}
 #navmenu ul li{
 	display: block;
-	list-style: none;
-	padding-left: 2%;
-	padding-right: 2%;
-	font-size: 0.75em;
-	line-height: 50px;
-	color: #cccccc;
-}	
 }
-	
+}
+@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))){
+	#navmenu,nav{
+		backdrop-filter: saturate(180%) blur(20px);
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+	}
+} 
