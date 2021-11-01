@@ -4,7 +4,7 @@
 *{  
     margin: 0px;  
     padding: 0px;
-	font-family: "苹方-简", Helvetica,"微软雅黑"; 
+	font-family: "苹方-简","SF Pro SC","PingFang SC","Helvetica Nune",Helvetica,"微软雅黑"; 
 	}
 a {
 	text-decoration: none;
@@ -21,11 +21,11 @@ nav {
 	height: 50px;
 	min-width: 320px;
 	padding: 0 5% 0 5%;
-	background: rgba(34,34,34,0.8);
+	background: rgba(34,34,34,0.75);
 	z-index: 999;
 	}
 .navbg {
-	background: rgba(17,17,17,0.9) !important;
+	background: rgba(17,17,17,0.85) !important;
 	}
 
 /* ham ↓ */
@@ -100,7 +100,12 @@ nav {
 #navmenu ul li:hover {
 	color: #ffffff;
 }
-
+@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))){
+	nav, #navmenu {
+		backdrop-filter: saturate(180%) blur(20px);
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+	}
+} 
 @media only screen and (max-width: 833px){
 #ham8 {
 	display: flex;
@@ -116,15 +121,10 @@ nav {
 	width: 80%;
 	padding: 5% 10% 5% 10%;
 	text-align: center;
-	background: rgba(17,17,17,0.9);
+	background: rgba(17,17,17,0.85);
 	}
 #navmenu ul li{
 	display: block;
 }
 }
-@supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))){
-	#navmenu,nav{
-		backdrop-filter: saturate(180%) blur(20px);
-		-webkit-backdrop-filter: saturate(180%) blur(20px);
-	}
-} 
+
