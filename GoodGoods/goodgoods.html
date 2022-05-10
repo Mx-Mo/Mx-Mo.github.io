@@ -2,88 +2,63 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
-	
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">	
-	
-<style type="text/css">
-	*{
-	margin: 0px;
-	padding: 0px;
-	font-family: "苹方-简", Helvetica,"微软雅黑"; 
-	}
-	a {
-	text-decoration: none;
-	}
-	body{
-		margin: 0 auto;
-		max-width: 580px;
-		min-width: 375px;
-		width: 100vw;
-		background: #F0F0F0;
-	}
-	.itemclassify{
-		margin: 4% 4% 0 4%;
-		font-size: 1em;
-		white-space: nowrap;
-	}
-	.itembox{
-		width: 92%;
-		margin: 2.5% 4% 2.5% 4%;
-		border: #A6B3AF 0.5px solid;
-		border-radius: 12px;
-		background: #ffffff;
-		overflow: hidden;
-	}
-	.itembox .goodsimg{
-		width: 80px;
-		height: 80px;
-		float: left;
-		overflow: hidden;
-	}
-	.itembox .goodsimg img{
-		width: 100%;
-		height: 100%;
-	}
-	.itembox .goodsinfo{
-		width: 70%;
-		padding: 1.5% 3% 1.5% 3%;
-		float: left;
-		overflow: hidden;
-	}
-	.itembox .goodsinfo p1{
-		font-size: 1rem;
-		font-weight: 600;
-		white-space: nowrap;
-	}
-	.itembox .goodsinfo p2{
-		font-size: 0.8em;
-		white-space: nowrap;
-		color: #A0A0A0;
-	}
-	.itembox .goodsinfo .price{
-		font-size: 0.8em;
-		white-space: nowrap;
-		margin-top: 3px;
-		color: #A0A0A0;
-		font-weight: 600;
-	}
-
-</style>
-	
+<title>GoodGoods</title>
+<link rel="stylesheet" type="text/css" href="goodgoods.css">
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>	
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">		
 </head>
+	
+	
 <body>
-	<div class="itemclassify">
-	<p>食用油</p>
+
+<nav>
+<!--
+	<div id="navlogo">
+		<svg t="1652187190117" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2248" width="30" height="30"><path d="M680.97024 343.06048A238.26432 238.26432 0 0 0 512 273.05984c-131.93216 0-238.92992 106.97728-238.92992 238.92992S380.06784 750.94016 512 750.94016c120.29952 0 219.5968-89.05728 236.19584-204.81024H512v-68.27008h307.2v34.12992a313.1392 313.1392 0 0 1-1.9968 34.14016C800.2048 699.74016 670.12608 819.21024 512 819.21024c-169.66656 0-307.2-137.53344-307.2-307.22048 0-169.64608 137.53344-307.2 307.2-307.2 84.82816 0 161.62816 34.39616 217.23136 89.99936l-48.26112 48.27136z" p-id="2249" fill="#f0f0f0"></path></svg>
 	</div>
+-->
+	<div id="navmenu">
+		<ul>
+			<li><a href="#">食用油</a></li>
+			<li><a href="#">酱油</a></li>
+			<li><a href="#">蚝油</a></li>
+			<li><a href="#">陈醋</a></li>
+			<li><a href="#">香醋</a></li>
+			<li><a href="#">料酒</a></li>
+		</ul>
+	</div>
+<svg id="ham8" viewBox="0 0 100 100" height="20" onclick="this.classList.toggle('active')">
+  <path class="hamline top"    d="m 20,50 h 60" />
+  <path class="hamline middle" d="m 20,50 h 60" />
+  <path class="hamline bottom" d="m 20,50 h 60" />
+</svg>
+</nav>
+<script>
+$(document).ready(function(){
+  $("#ham8").click(function(){
+    $("#navmenu").slideToggle(300);
+	$("nav").toggleClass("navbg");
+  });
+});
+</script>
+<script>
+  var imgs=$("img");
+  imgs.on("contextmenu",function(){return false;});
+  imgs.on("dragstart",function(){return false;});
+</script>
+	
+	
+	
+
+<div class="itemclassify"><p>食用油</p></div>
 	<div class="itembox">
 		<div class="goodsimg">
 			<img src="Goodsimgs/Kitchen/Cooking/oil_4900.JPG" alt=""/>
 		</div>
 		<div class="goodsinfo">
 			<p><p1>鲁花5S压榨一级花生油</p1></p>
-			<p><p2>规格：5L+1L</p2></p>
-			<p class="price">¥199.8 / 5L+1L</p>
+			<p><p2>5L/桶+1L</p2></p>
+			<p class="price">¥199.8 /组</p>
 		</div>
 	</div>
 	
@@ -93,13 +68,21 @@
 		</div>
 		<div class="goodsinfo">
 			<p><p1>鲁花低芥酸特香菜籽油</p1></p>
-			<p><p2>规格：5L</p2></p>
-			<p class="price">¥99.9 / 5L</p>
+			<p><p2>5L/桶</p2></p>
+			<p class="price">¥99.9 /桶</p>
 		</div>
 	</div>
 	
-	<div class="itemclassify">
-	<p>酱油</p>
+<div class="itemclassify"><p>酱油</p></div>
+	<div class="itembox">
+		<div class="goodsimg">
+			<img src="Goodsimgs/Kitchen/Cooking/sauce_4899.JPG" alt=""/>
+		</div>
+		<div class="goodsinfo">
+			<p><p1>千合零添加酱油特级生抽</p1></p>
+			<p><p2>1L/瓶</p2></p>
+			<p class="price">¥46.8 /2瓶</p>
+		</div>
 	</div>
 	<div class="itembox">
 		<div class="goodsimg">
@@ -107,8 +90,8 @@
 		</div>
 		<div class="goodsinfo">
 			<p><p1>海天老字号零添加头道酱油</p1></p>
-			<p><p2>氨基酸态氮含量≥1.0g/100ml</p2></p>
-			<p class="price">¥35.9 / 480ml×2瓶</p>
+			<p><p2>480ml/瓶</p2></p>
+			<p class="price">¥35.9 /2瓶</p>
 		</div>
 	</div>
 	<div class="itembox">
@@ -117,24 +100,54 @@
 		</div>
 		<div class="goodsinfo">
 			<p><p1>太太乐原味鲜头道特级鲜酱油</p1></p>
-			<p><p2>氨基酸态氮含量≥0.8g/100ml</p2></p>
-			<p class="price">¥33.21 / 450ml×2瓶</p>
+			<p><p2>450ml/瓶</p2></p>
+			<p class="price">¥33.21 /2瓶</p>
+		</div>
+	</div>
+	
+	<div class="itemclassify"><p>蚝油</p></div>
+	<div class="itembox">
+		<div class="goodsimg">
+			<img src="Goodsimgs/Kitchen/Cooking/oyster_4901.JPG" alt=""/>
+		</div>
+		<div class="goodsinfo">
+			<p><p1>李锦记财神蚝油</p1></p>
+			<p><p2>907g/瓶</p2></p>
+			<p class="price">¥19.9 /瓶</p>
 		</div>
 	</div>
 	<div class="itembox">
 		<div class="goodsimg">
-			<img src="Goodsimgs/Kitchen/Cooking/sauce_4899.JPG" alt=""/>
+			<img src="Goodsimgs/Kitchen/Cooking/oyster_4902.JPG" alt=""/>
 		</div>
 		<div class="goodsinfo">
-			<p><p1>千合零添加酱油特级生抽</p1></p>
-			<p><p2>氨基酸态氮含量≥1.1g/100ml</p2></p>
-			<p class="price">¥46.8 / 1L×2瓶</p>
+			<p><p1>李锦记旧庄蚝油</p1></p>
+			<p><p2>510g/瓶</p2></p>
+			<p class="price">¥88.8 /2瓶</p>
+		</div>
+	</div>
+	<div class="itembox">
+		<div class="goodsimg">
+			<img src="Goodsimgs/Kitchen/Cooking/oyster_4903.JPG" alt=""/>
+		</div>
+		<div class="goodsinfo">
+			<p><p1>沙井原汁蚝油</p1></p>
+			<p><p2>500g/瓶</p2></p>
+			<p class="price">¥59 /瓶</p>
 		</div>
 	</div>
 	
-	
-	
-	
+<div class="itemclassify"><p>陈醋</p></div>	
+	<div class="itembox">
+		<div class="goodsimg">
+			<img src="Goodsimgs/Kitchen/Cooking/oyster_4903.JPG" alt=""/>
+		</div>
+		<div class="goodsinfo">
+			<p><p1>沙井原汁蚝油</p1></p>
+			<p><p2>500g/瓶</p2></p>
+			<p class="price">¥59 /瓶</p>
+		</div>
+	</div>
 	
 	
 	
